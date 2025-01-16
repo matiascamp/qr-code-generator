@@ -1,4 +1,4 @@
-import { input } from "./qr-code"
+import { input } from "./qr-code.js"
 
 export default function download() {
     const downloadButton = document.querySelector('.download')
