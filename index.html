@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <header>
+      <div id="customAlert" class="custom-alert hidden">
+        <p id="alertMessage"></p>
+        <button id="closeAlert">Cerrar</button>
+      </div>
+    </header>
+   <main>
+    <div class="firstStep">
+      <img class="big-logo" src="./assets/Logo.svg" alt="big-logo">
+      <div class="qr-input-container">
+       <input id="url-qr-input" type="text" placeholder="Enter an url">
+       <button class="qr-code-button">QR code</button>
+     </div>
+    </div>
+    <div class="generated-qr-container hidden">
+      <div>
+        <img src="./assets/Logo-small.svg" alt="small-logo">
+      </div>
+      <div id="qr-container">
+        <div class="circle"></div>
+      </div>
+      <div class="buttons-container-generated ">
+        <button class="download">Download</button>
+        <button class="share">Share</button>
+      </div>
+    </div>
+   </main>
+    <script type="module" src="/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"
+        integrity="sha512-BNaRQnYJYiPSqHHDb58B0yaPfCu+Wgds8Gp/gU33kqBtgNS4tSPHuGibyoeqMV/TJlSKda6FXzoEyYGjTe+vXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  </body>
+</html>
